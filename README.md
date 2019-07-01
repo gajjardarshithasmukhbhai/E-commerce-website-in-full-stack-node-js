@@ -1,5 +1,5 @@
 # E-commerce-website-in-full-stack-node-js and paypal
-## MVC architecture and socket programming
+## MVC architecture and socket programming and money service
 ```text
 in this webapp is fully bashed on MVC(model,view,controller base web-app) 
 architecture with real time chating features like socket io :-)
