@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hello</title>
+  <link rel="stylesheet" type="text/css" href="/mdB/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/mdB/css/mdb.min.css">
+  <script src="/jquery/jquery.min.js"></script>
+  <script src="/bootstrap-js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/css.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light fixed-top kk">
+<a class="navbar-brand text-white te" href="#">xemzom</a>
+
+<div class="navbar-collapse" >
+  <ul class="navbar-nav lead ml-auto" style="font-weight: 600;f">
+    <li >
+      <a href="/" class="nav-link text-white te text-white te"><i class="fas fa-house-damage nav-link tx text-white"></i>Home</a>
+    </li>
+    <li>
+      <a href="/Shop" class="nav-link text-white te text-white te"><i class="fas fa-shopping-bag nav-link tx text-white"></i>Shop</a>
+    </li>
+    <li >
+      <a href="/Product" class="nav-link text-white te text-white te"><i class="fas fa-suitcase nav-link tx text-white"></i>Product</a>
+    </li>
+    
+    <li>
+      <a href="/Order" class="nav-link text-white te text-white te"><i class="fab fa-first-order nav-link tx text-white"></i>Order</a>
+    </li>
+    <li>
+      <a href="/Add_Product" class="nav-link text-white te text-white te"><i class="fab fa-product-hunt nav-link tx text-white"></i>Add Product</a>
+    </li>
+    <li>
+      <a href="/chat" class="nav-link text-white te text-white te"><i class="fas fa-comments nav-link tx text-white"></i>user chat</a>
+    </li>
+    <li>
+      <a href="/Admin_Product" class="nav-link text-white te text-white te"><i class="fab fa-cloudsmith nav-link tx text-white"></i>Admin Product</a>
+    </li>
+    <li>
+      <a href="/LOGOUT" class="nav-link text-white te text-white te"><i class="fas fa-sign-out-alt nav-link tx text-white"></i>Logout</a>
+    </li>
+  </ul>
+</div>
+</nav>
+
+<br>
+<br>
+<br>
+
+<div class="container">
+<div class="row">
+  each val in data
+    <div class="col-md-4 col-sm-12">
+        <br>
+        <div class="card-deck">
+            <div class="card promoting-card">
+                <!-- Card content -->
+                <div class="card-body d-flex flex-row">
+                    <!-- Avatar -->
+                    <img src=#{val.Image} class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
+                    <!-- Content -->
+                    <div>
+                        <!-- Title -->
+                        <h4 class="card-title font-weight-bold mb-2">#{val.title}</h4>
+                        <!-- Subtitle -->
+                        <p class="card-text"><i class="far fa-clock pr-2"></i>07/24/2018</p>
+                    </div>
+                </div>
+                <!-- Card image -->
+                <div class="view overlay">
+                    <img class="card-img-top rounded-0" src=#{val.Image} alt="Card image cap">
+                    <a href="#!">
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+                <!-- Card content -->
+                <div class="card-body">
+                    <div class="collapse-content">
+                        <!-- Text -->
+                        <p class="card-text" style="font-size: 18px;">#{val.description}</p>
+                        <p class="card-text" style="font-size: 18px;">#{val.Price}&nbsp;<b>$</b></p>
+                        <!-- Button -->
+            
+                    </div>
+                    <a class="btn btn-primary" href="/Admin_product/#{val.random}"><i class="fas fa-edit"></i>&nbsp;Edit</a>
+                    <a class="btn btn-default" href="/Admin_delete_Product/#{val._id}"><i class="fas fa-trash-alt"></i>&nbsp;Delete</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br>
+</div>
+</body>
+</html>

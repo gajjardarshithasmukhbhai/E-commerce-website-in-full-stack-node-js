@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>hello</title>
+    <link rel="stylesheet" type="text/css" href="/mdB/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/mdB/css/mdb.min.css">
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/bootstrap-js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/css.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light kk fixed-top">
+        <a class="navbar-brand text-white te" href="#">xemzom</a>
+        <div class="navbar-collapse">
+            <ul class="navbar-nav lead ml-auto" style="font-weight:600;">
+                <li>
+                    <a href="/" class="nav-link text-white te text-white te"><i class="fas fa-house-damage nav-link tx text-white"></i>Home</a>
+                </li>
+                <li>
+                    <a href="/Shop" class="nav-link text-white te text-white te"><i class="fas fa-shopping-bag nav-link tx text-white"></i>Shop</a>
+                </li>
+                <li>
+                    <a href="/Products" class="nav-link text-white te text-white te"><i class="fas fa-suitcase nav-link tx text-white"></i>products</a>
+                </li>
+                <li>
+                    <a href="/Order" class="nav-link text-white te text-white te"><i class="fab fa-first-order nav-link tx text-white"></i>Order</a>
+                </li>
+                <li>
+                    <a href="/Add_Product" class="nav-link text-white te text-white te"><i class="fab fa-product-hunt nav-link tx text-white"></i>Add Product</a>
+                </li>
+                <li>
+                    <a href="/chat" class="nav-link text-white te text-white te"><i class="fas fa-comments nav-link tx text-white"></i>user chat</a>
+                </li>
+                <li>
+                    <a href="/Admin_Product" class="nav-link text-white te text-white te"><i class="fab fa-cloudsmith nav-link tx text-white"></i>Admin Product</a>
+                </li>
+                <li>
+                    <a href="/LOGOUT" class="nav-link text-white te text-white te"><i class="fas fa-sign-out-alt nav-link tx text-white"></i>Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+      <div class="container">
+        <div class="row">
+          each val in order
+            <div class="col-md-6">
+                <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">#{val.name}</h5>
+                        <p class="card-text" style="color: white;">your product #{val.name} price is #{val.price} $</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+
+</html>

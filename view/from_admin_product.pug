@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/md/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/md/css/mdb.min.css">
+    <link rel="stylesheet" type="text/css" href="/notification/build/toastr.css">
+    <script src="/md/js/jquery-3.3.1.min.js"></script>
+    <script src="/notification/toastr.js"></script>
+    <script src="/md/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/css.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar fixed-top navbar-dark bg-primary">
+            <a class="navbar-brand text-white te" href="#">xemzom</a>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <form method="post" action="/admin_products_add">
+            <div class="container">
+                <table class="table table-striped" style="background-color: #3399E7;">
+                    <tbody>
+                        <tr>
+                            <td colspan="1">
+                                <form class="well form-horizontal">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" style="color: white;">Full Name</label>
+                                            <div class="col-md-8 inputGroupContainer">
+                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" placeholder="Full Name" class="form-control" required="true" value="" type="text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" style="color: white;">Product name</label>
+                                            <div class="col-md-8 inputGroupContainer">
+                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine1" name="productname" placeholder="Address Line 1" class="form-control" required="true" value="" type="text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" style="color: white;">product price</label>
+                                            <div class="col-md-8 inputGroupContainer">
+                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine2" name="productprice" placeholder="$" class="form-control" required="true" value="" type="text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" style="color: white;">description</label>
+                                            <div class="col-md-8 inputGroupContainer">
+                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="city" name="description" placeholder="City" class="form-control" required="true" value="" type="text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" style="color: white;">State/Province/Region</label>
+                                            <div class="col-md-8 inputGroupContainer">
+                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="state" name="state" placeholder="State/Province/Region" class="form-control" required="true" value="" type="text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" style="color: white;">Image</label>
+                                            <div class="col-md-8 inputGroupContainer">
+                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="postcode" name="Image" placeholder="Postal Code/ZIP" class="form-control" required="true" value="" type="text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" style="color: white;">Email</label>
+                                            <div class="col-md-8 inputGroupContainer">
+                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span><input id="email" name="email" placeholder="Email" class="form-control" required="true" value="" type="text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" style="color: white;">Phone Number</label>
+                                            <div class="col-md-8 inputGroupContainer">
+                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span><input id="phoneNumber" name="phoneNumber" placeholder="Phone Number" class="form-control" required="true" value="" type="text"></div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-info">submit</button>
+            <button type="reset" class="btn btn-danger">cancel</button>
+    </div>
+    </form>
+</body>
+
+</html>

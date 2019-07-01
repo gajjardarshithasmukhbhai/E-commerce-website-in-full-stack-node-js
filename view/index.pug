@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/md/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/md/css/mdb.min.css">
+  <link rel="stylesheet" type="text/css" href="/notification/build/toastr.css">
+  <script src="/md/js/jquery-3.3.1.min.js"></script>
+  <script src="/notification/toastr.js"></script>
+  <script src="/md/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/css.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+</head>
+<body>
+
+<!--/.Navbar-->
+<nav class="navbar navbar-expand-sm navbar-light kk fixed-top">
+<a class="navbar-brand text-white te" href="#">xemzom</a>
+<div class="navbar-collapse" >
+  <ul class="navbar-nav lead ml-auto" style="font-weight: 600;f">
+    <li >
+      <a href="/" class="nav-link text-white te text-white te"><i class="fas fa-house-damage nav-link tx text-white"></i>Home</a>
+    </li>
+    <li>
+      <a href="/Shop" class="nav-link text-white te text-white te"><i class="fas fa-shopping-bag nav-link tx text-white"></i>Shop</a>
+    </li>
+    <li >
+      <a href="/Product" class="nav-link text-white te text-white te"><i class="fas fa-suitcase nav-link tx text-white"></i>Product</a>
+    </li>
+    
+    <li>
+      <a href="/Order" class="nav-link text-white te text-white te"><i class="fab fa-first-order nav-link tx text-white"></i>Order</a>
+    </li>
+    <li>
+      <a href="/Add_Product" class="nav-link text-white te text-white te"><i class="fab fa-product-hunt nav-link tx text-white"></i>Add Product</a>
+    </li>
+    <li>
+      <a href="/Admin_Product" class="nav-link text-white te text-white te"><i class="fab fa-cloudsmith nav-link tx text-white"></i>Admin Product</a>
+    </li>
+    <li>
+      <a href="/Admin_Product" data-toggle="modal" data-target="#elegantModalForm" class="nav-link text-white te text-white te"><i class="fas fa-user-circle nav-link tx text-white"></i>Login</a>
+    </li>
+    <li>
+      <a href="/signUp" class="nav-link text-white te text-white te"><i class="fas fa-user-plus nav-link tx text-white"></i>SignUp</a>
+    </li>
+  </ul>
+</div>
+</nav>
+<br>
+<br>
+<br><br>
+<br>
+
+<center>
+<div class="col-md-5">
+<div class="card">
+  <!-- Card content -->
+  <div class="card-body w-100">
+      <form action="/Add_product" method="post">
+        <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Sign in</strong></h3>
+        <div class="md-form mt-0">
+          <input type="email" id="materialRegisterFormEmail" class="form-control" name="email" required>
+          <label for="materialRegisterFormEmail"><b>E-mail</b></label>
+        </div>
+        <div class="md-form">
+          <input type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock" name="password" required>
+          <label for="materialRegisterFormPassword"><b>Password</b></label>
+          <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+              At least 8 characters and 1 digit
+          </small>
+        </div>
+         <div class="d-flex justify-content-around">
+            <div>
+              <!-- Remember me -->
+            </div>
+             <p class="font-small blue-text d-flex justify-content-end">Forgot Password?
+             </p>
+        </div>
+        <button type="submit" class="btn btn-outline-info waves-effect w-100">Login</button>
+        //- never use button tag in exam because of exam
+        //- prospective input tag is use
+        <div class="row my-3 d-flex justify-content-center">
+        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f blue-text text-center"></i></button>
+        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-twitter blue-text"></i></button>
+        <!--Google +-->
+        <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fab fa-google-plus-g blue-text"></i></button>
+      </div>
+      </form>
+  </div>
+
+</div>
+</div>
+</center>
+script.
+  let valid="#{valid}";
+  if(valid==="false")
+  {
+    toastr.error("your username or password are invalid", 'password', {timeOut: 7000,
+          positionClass: 'toast-bottom-center',
+          closeButton: true,
+          progressBar:true,
+        })
+  }
+<script src="/mdb/js/jquery-3.3.1.min.js">
+</script>
+<script type="text/javascript" src="/mdb/js/mdb.min.js"></script>
+<script type="text/javascript" src="/mdb/js/bootstrap.min.js">
+</script>
+</body>
+</html>

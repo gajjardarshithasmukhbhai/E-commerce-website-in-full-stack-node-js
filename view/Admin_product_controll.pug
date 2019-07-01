@@ -1,0 +1,98 @@
+<html>
+<head>
+  <title>hello</title>
+  <link rel="stylesheet" type="text/css" href="/mdB/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/mdB/css/mdb.min.css">
+  <script src="/jquery/jquery.min.js"></script>
+  <script src="/bootstrap-js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/css.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light kk fixed-top">
+<a class="navbar-brand text-white te" href="#">xemzom</a>
+
+<div class="navbar-collapse" >
+  <ul class="navbar-nav lead ml-auto" style="font-weight: 600;">
+    <li >
+      <a href="/" class="nav-link text-white te text-white te"><i class="fas fa-house-damage nav-link tx text-white"></i>Home</a>
+    </li>
+    <li>
+      <a href="/Shop" class="nav-link text-white te text-white te"><i class="fas fa-shopping-bag nav-link tx text-white"></i>Shop</a>
+    </li>
+    <li >
+      <a href="/Product" class="nav-link text-white te text-white te"><i class="fas fa-suitcase nav-link tx text-white"></i>Product</a>
+    </li>
+    <li>
+      <a href="/Add_Product" class="nav-link text-white te text-white te"><i class="fas fa-comments nav-link tx text-white"></i>user chat</a>
+    </li>
+    
+    <li>
+      <a href="/Order" class="nav-link text-white te text-white te"><i class="fab fa-first-order nav-link tx text-white"></i>Order</a>
+    </li>
+    <li>
+      <a href="/Add_Product" class="nav-link text-white te text-white te"><i class="fab fa-product-hunt nav-link tx text-white"></i>Add Product</a>
+    </li>
+    <li>
+      <a href="/Admin_Product" class="nav-link text-white te text-white te"><i class="fab fa-cloudsmith nav-link tx text-white"></i>Admin Product</a>
+    </li>
+    <li>
+      <a href="/LOGOUT" class="nav-link text-white te text-white te"><i class="fas fa-sign-out-alt nav-link tx text-white"></i>Logout</a>
+    </li>
+  </ul>
+</div>
+</nav>
+<!-- Default form register -->
+<form class="text-center border border-light p-5" action="/admin_product_controll_check" method="post">
+<br>
+<br>
+    <p class="h4 mb-4">Vendeor Login</p>
+
+    <div class="form-row mb-4">
+        <div class="col">
+            <!-- First name -->
+            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Firstname" name="Firstname">
+        </div>
+        <div class="col">
+            <!-- Last name -->
+            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name" name="Lastname">
+        </div>
+    </div>
+
+    <!-- E-mail -->
+    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail" name="Email">
+
+    <!-- Password -->
+    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock" name="Password">
+
+    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+        At least 8 characters and 1 digit
+    </small>
+
+    <!-- Phone number -->
+    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock" name="Phonenumber">
+    <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+        Optional - for two step authentication
+    </small>
+
+    <!-- Newsletter -->
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+        <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
+    </div>
+
+    <!-- Sign up button -->
+    <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
+
+    <!-- Social register -->
+    <hr>
+
+    <!-- Terms of service -->
+    <p>By clicking
+        <em>Sign up</em> you agree to our
+        <a href="" target="_blank">terms of service</a>
+
+</form>
+<!-- Default form register -->
+</body>
+</html>

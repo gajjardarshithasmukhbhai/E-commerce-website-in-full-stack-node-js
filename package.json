@@ -1,0 +1,43 @@
+{
+  "name": "passportJs-complete-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "anime": "^0.1.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.2.1",
+    "connect-mongodb-session": "^2.1.1",
+    "csurf": "^1.9.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "font-awesome": "^4.7.0",
+    "google-fonts": "^1.0.0",
+    "googleapis": "^39.2.0",
+    "jquery": "^3.4.1",
+    "material-kit": "^2.0.4",
+    "mongodb": "^3.2.2",
+    "mongoose": "^5.4.19",
+    "mysql2": "^1.6.5",
+    "nodemailer": "^6.1.0",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^3.0.0",
+    "passport-github": "^1.1.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-instagram": "^1.0.0",
+    "passport-linkedin-oauth2": "^1.6.1",
+    "paypal-rest-sdk": "^1.8.1",
+    "pug": "^2.0.3",
+    "socket.io": "^2.2.0",
+    "toastr": "^2.1.4",
+    "xoauth2": "^1.2.0"
+  }
+}

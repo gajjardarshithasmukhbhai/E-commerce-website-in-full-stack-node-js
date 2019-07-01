@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hello</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+  <link rel="stylesheet" type="text/css" href="/mdB/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/mdB/css/mdb.min.css">
+  <script src="/jquery/jquery.min.js"></script>
+  <script src="/bootstrap-js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/css.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light kk fixed-top">
+<a class="navbar-brand text-white te" href="#">xemzom</a>
+<div class="navbar-collapse" >
+  <ul class="navbar-nav lead ml-auto" style="font-weight:600;">
+    <li >
+      <a href="/" class="nav-link text-white te text-white te"><i class="fas fa-house-damage nav-link tx text-white"></i>Home</a>
+    </li>
+    <li>
+      <a href="/Shop" class="nav-link text-white te text-white te"><i class="fas fa-shopping-bag nav-link tx text-white"></i>Shop</a>
+    </li>
+    <li >
+      <a href="/Product" class="nav-link text-white te text-white te"><i class="fas fa-suitcase nav-link tx text-white"></i>Product</a>
+    </li>
+    
+    <li>
+      <a href="/Order" class="nav-link text-white te text-white te"><i class="fab fa-first-order nav-link tx text-white"></i>Order</a>
+    </li>
+    <li>
+      <a href="/Add_Product" class="nav-link text-white te text-white te"><i class="fab fa-product-hunt nav-link tx text-white"></i>Add Product</a>
+    </li>
+    <li>
+      <a href="/chat" class="nav-link text-white te text-white te"><i class="fas fa-comments nav-link tx text-white"></i>user chat</a>
+    </li>
+
+    <li>
+      <a href="/Admin_Product" class="nav-link text-white te text-white te"><i class="fab fa-cloudsmith nav-link tx text-white"></i>Admin Product</a>
+    </li>
+    <li>
+      <a href="/LOGOUT" class="nav-link text-white te text-white te"><i class="fas fa-sign-out-alt nav-link tx text-white"></i>Logout</a>
+    </li>
+  </ul>
+</div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<center>
+<div class="col-md-12">
+  <div class="col-md-4"></div>
+  <div class="col-md-5">
+    <div class="card card-image" style="background-image: url(https://cdn-images-1.medium.com/max/1200/1*M_PoTEmelbIbw3nLcWHjSg.png); background-size: cover;">
+      <!-- Content -->
+      <center>
+      <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+        <div>
+            <h5 class="text " style="font-size: 20px;font-weight: 400;color: white;margin-left: 100px;">Live chat Mr.Darshit system</h5>  
+            <div class="chat">
+              <div  id="youuu">
+              </div>
+              
+            </div>              
+              <!-- <form > -->
+                <div class="md-form">           
+                    <input type="text" class="form-control gff"  rows="1" placeholder="Message" id="data" style="color: white;font-size: 20px;">
+                      <button onclick="myfunction();" style="margin-left: -110px;border-radius: 50%;font-size:15px;font-family:Arial;font-weight:400;" class="btn btn-primary" disable>send</button>
+                      <button type="reset" style="margin-left: 0px;border-radius: 50%;font-size:15px;font-family:Arial;font-weight:400;" class="btn btn-secondary" onclick="cancel();">cancel</button>
+                       script.
+                        var socket=io.connect('https://xemzom-chatting.herokuapp.com/');
+                        var x=`#{myuser}`;
+                        var y=document.getElementById('data');
+                        var me=document.getElementById('me');
+                        var youuu=document.getElementById('youuu');
+                        var handleuser=document.getElementById('user');
+
+                        //function
+                        function cancel()
+                        {
+                          y.value='';
+
+                        }
+                        function myfunction(){
+                          console.log(x.value,y.value);
+                          socket.emit('chat',{
+                            message:x,
+                            user:y.value,
+                          });
+                        }
+
+                        socket.on('chat',(data)=>{
+                        let lkj=data.user.indexOf('https');
+                        console.log(data.message,'->',data.user);
+                        if(lkj==0){
+                           if(data.user!=y.value)
+                            {
+                          youuu.innerHTML+='<div class="bubble you">'+'<p style="color:red;margin-left:0px;">'+data.message+'</p>'+
+                          `<img src='${data.user}' style="margin-left:0px;width:200px;height:110px;"/>`+'</div>';
+                          y.value='';
+                        }
+                        else{
+
+                          youuu.innerHTML+='<div class="bubble me">'+'<p style="color:green;margin-left:0px;">'+data.message+'</p>'+
+                          `<img src='${data.user}' style="color:green;margin-left:0px;width:200px;height:110px;"/>`+'</div>';
+                          y.value='';
+
+                        }
+                        }
+                        else{
+                          if(data.user!=y.value){
+                          youuu.innerHTML+='<div class="bubble you">'+'<p style="color:red;margin-left:0px;">'+data.message+'</p>'+
+                          '<p>'+data.user+'</p>'+'</div>';
+                          y.value='';
+
+                        }
+                        else{
+                          youuu.innerHTML+='<div class="bubble me">'+'<p style="color:green;margin-left:0px;">'+data.message+'</p>'+
+                          '<p>'+data.user+'</p>'+'</div>';
+                          y.value='';
+                          
+                        }
+                        }
+                        
+                          
+                        });
+                </div>
+                 
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+</center>
+</body>
+</html>

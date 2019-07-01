@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hello</title>
+  <link rel="stylesheet" type="text/css" href="/mdB/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/mdB/css/mdb.min.css">
+  <script src="/jquery/jquery.min.js"></script>
+  <script src="/bootstrap-js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/css.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light kk fixed-top">
+<a class="navbar-brand text-white te" href="#">xemzom</a>
+<div class="navbar-collapse" >
+  <ul class="navbar-nav lead ml-auto" style="font-weight:600;">
+    <li >
+      <a href="/" class="nav-link text-white te text-white te"><i class="fas fa-house-damage nav-link tx text-white"></i>Home</a>
+    </li>
+    <li>
+      <a href="/Shop" class="nav-link text-white te text-white te"><i class="fas fa-shopping-bag nav-link tx text-white"></i>Shop</a>
+    </li>
+    <li >
+      <a href="/Products" class="nav-link text-white te text-white te"><i class="fas fa-suitcase nav-link tx text-white"></i>products</a>
+    </li>
+    
+    <li>
+      <a href="/Order" class="nav-link text-white te text-white te"><i class="fab fa-first-order nav-link tx text-white"></i>Order</a>
+    </li>
+    <li>
+      <a href="/Add_Product" class="nav-link text-white te text-white te"><i class="fab fa-product-hunt nav-link tx text-white"></i>Add Product</a>
+    </li>
+    <li>
+      <a href="/chat" class="nav-link text-white te text-white te"><i class="fas fa-comments nav-link tx text-white"></i>user chat</a>
+    </li>
+
+    <li>
+      <a href="/Admin_Product" class="nav-link text-white te text-white te"><i class="fab fa-cloudsmith nav-link tx text-white"></i>Admin Product</a>
+    </li>
+    <li>
+      <a href="/LOGOUT" class="nav-link text-white te text-white te"><i class="fas fa-sign-out-alt nav-link tx text-white"></i>Logout</a>
+    </li>
+  </ul>
+</div>
+</nav>
+<br>
+<br>
+<br>
+
+
+<div class="container">
+<div class="row">
+  if data
+    each val in data
+      <div class="col-md-4">
+        <br>
+        <div class="card-deck">
+          <div class="card card-cascade narrower">
+            <div class="view view-cascade overlay">
+              <img  class="card-img-top card-img" src=#{val.image} alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body card-body-cascade">
+              <h5 class="pink-text pb-2 pt-1"><i class="fas fa-car"></i>&nbsp;Products</h5>
+              <!-- Title -->
+              <h4 class="font-weight-bold card-title">#{val.productname}</h4>
+              <!-- Text -->
+              <p class="card-text" style="font-size: 18px;">Description :#{val.description}</p>
+              <p class="card-text" style="font-size: 18px;">#{val.productprice}&nbsp;<b>$</b></p>
+              <p class="card-text" style="font-size: 18px;">vendor Name :#{val.fullname}&nbsp;<b></b></p>
+              <p class="card-text" style="font-size: 18px;">vendor phoneNumber :#{val.phonenumber}&nbsp;<b></b></p>
+              <p class="card-text" style="font-size: 18px;">state :#{val.state}&nbsp;</p>
+              <p class="card-text" style="font-size: 18px;">contact EmailId:#{val.email}&nbsp;</p>
+              <!-- Button -->
+              
+              <a href='/Product/#{val.productId}' class="btn btn-primary"><i class="fas fa-shopping-cart"></i>Add Cart</a>
+              <a href="/Product_delete/#{val.productId}" class="btn btn-danger"><i class="fas fa-magic mr-1" ></i>Delete</a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+  else
+    <h1>welcome your shopping is empty</h1>
+</div>
+</div>
+
+
+</body>
+</html>
+
+
