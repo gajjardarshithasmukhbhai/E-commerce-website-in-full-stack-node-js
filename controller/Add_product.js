@@ -470,7 +470,8 @@ exports.social_service_signup=(req,res,next)=>{
   // res.render('mypassword',{authenticated_email:passportJs.emailID});
 }
 exports.add_product_data_controller=(req,res,next)=>{
-	let myuser=req.session.myuser;
+	console.log("hello->");
+  let myuser=req.session.myuser;
   let random="";  
   var characters='ABC12344DEFGH234I334Q2344K45673XZASLMKPO08633';
    var charactersLength = characters.length;
@@ -525,17 +526,18 @@ exports.admin_delete_product_controller=(req,res,next)=>{
 	
 	});
 }
-exports.add_products_controller=(req,res,next)=>{
+exports.signin_controller=(req,res,next)=>{
 	let email=req.body.email;
 	let password=req.body.password;
 		// User.saveUser(email,password)
 		let sx=new User(email,password);
 		sx.save()
 		.then(resolve=>{
+      console.log("----->>",resolve);
 			if(resolve){
         req.session.loggedIn=true;
         req.session.myuser=email;
-				res.redirect("/Add_product");//change res.redirect('Add_product');
+				res.redirect("/Products");//change res.redirect('Add_product');
       res.end();
 							
 			
@@ -592,6 +594,7 @@ exports.admin_edit_product_controller=(req,res,next)=>{
 	});	
 }
 exports.add_products_controller=(req,res,next)=>{
+  console.log("majama");
   let sx=new Adminproducts();
   sx.fetchall()
   .then(we=>{
@@ -709,7 +712,8 @@ exports.home_controller=(req,res,next)=>{
   }
 }
 exports.add_product_controller=(req,res,next)=>{
-  console.log("req.session.loggedIn",req.session.loggedIn);
+  console.log("kem");
+  // console.log("req.session.loggedIn",req.session.loggedIn);
 	let xy=req.session.loggedIn;
 	 // console.log("---->",req.session.loggedIn);
 	if(xy){

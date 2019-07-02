@@ -15,7 +15,7 @@
 
 <body>
     <div>
-        <nav class="navbar fixed-top navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-sm navbar-light kk fixed-top">
             <a class="navbar-brand text-white te" href="#">xemzom</a>
         </nav>
         <br>
@@ -23,7 +23,7 @@
         <br>
         <form method="post" action="/admin_products_add">
             <div class="container">
-                <table class="table table-striped" style="background-color: #3399E7;">
+                <table class="table table-striped" style="background-color: #00695c;">
                     <tbody>
                         <tr>
                             <td colspan="1">
@@ -38,7 +38,7 @@
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" style="color: white;">Product name</label>
                                             <div class="col-md-8 inputGroupContainer">
-                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine1" name="productname" placeholder="Address Line 1" class="form-control" required="true" value="" type="text"></div>
+                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="addressLine1" name="productname" placeholder="product name" class="form-control" required="true" value="" type="text"></div>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -50,7 +50,7 @@
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" style="color: white;">description</label>
                                             <div class="col-md-8 inputGroupContainer">
-                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="city" name="description" placeholder="City" class="form-control" required="true" value="" type="text"></div>
+                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="description" name="description" placeholder="City" class="form-control" required="true" value="" type="text"></div>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -62,7 +62,7 @@
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" style="color: white;">Image</label>
                                             <div class="col-md-8 inputGroupContainer">
-                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="postcode" name="Image" placeholder="Postal Code/ZIP" class="form-control" required="true" value="" type="text"></div>
+                                                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input id="postcode" name="Image" placeholder="image url" class="form-control" required="true" value="" type="text"></div>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -79,14 +79,14 @@
                                         </div>
                                     </fieldset>
                                 </form>
+                                <button type="submit" class="btn peach-gradient">submit</button>
+                                <button type="reset" class="btn aqua-gradient">cancel</button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <br>
-            <button type="submit" class="btn btn-info">submit</button>
-            <button type="reset" class="btn btn-danger">cancel</button>
     </div>
     </form>
 </body>

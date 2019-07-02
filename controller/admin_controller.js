@@ -7,15 +7,22 @@ exports.admin_products=(req,res,next)=>{
 	let Password=req.body.Password;
 	let email=req.body.Email;
 	let Phonenumber=req.body.Phonenumber;
+	let admin_login=req.session.zwos2ma29ma;
 	console.log(first_name,last_name,Password,Phonenumber);
 	let Admin_user=new Admin(first_name,last_name,email,Password,Phonenumber);
 	Admin_user.save().then(ed=>{
-		if(ed){
+		if(ed[0]){
 			req.session.zwos2ma29ma=true;
 			req.session.email=email;
 			req.session.Password=Password;
 			res.render("from_admin_product");
 		}
+		else{
+			res.send("sorry your information is wrong");
+		}
+	})
+	.catch(err=>{
+		console.log("system crash");
 	});
 }
 exports.admin_products_kem=(req,res,next)=>{
@@ -29,7 +36,16 @@ exports.admin_products_kem=(req,res,next)=>{
 	let Image=req.body.Image;
 	let Email=req.session.email;
 	let Password=req.session.Password;
-	console.log(fullName,productname,productprice,description,state,email);
-	let admin_products=new Adminproducts(fullName,productname,productprice,description,state,email,Phonenumber,Image);
-	admin_products.save(Email,Password);				
+	let login=req.session.zwos2ma29ma;
+	if(login)
+	{
+		// console.log(fullName,productname,productprice,description,state,email);
+		let admin_products=new Adminproducts(fullName,productname,productprice,description,state,email,Phonenumber,Image);
+		admin_products.save(Email,Password);
+	}
+	else
+	{
+		res.redirect("/shop");
+	}
+					
 }	

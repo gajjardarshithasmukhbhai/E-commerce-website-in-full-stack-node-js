@@ -22,7 +22,7 @@ const product=require('./controller/Add_product.js');
 const shop=require('./controller/Add_product.js');
 const home=require('./controller/Add_product.js');
 const signup=require('./controller/Add_product.js');
-const add_product=require('./controller/Add_product.js');
+let  add_product=require('./controller/Add_product.js');
 var texsting=require('./index.js');
 const admin_check_product_control=require('./controller/admin_controller.js');
 var mongoConnect=require('./util/database.js').mongoConnect;
@@ -41,9 +41,7 @@ app.use(session({
 	resave:false,/*aa em batave upcoming req ma te session te save thato nathi*/
 	saveUninitialized:false,/*the session cookie will not be set on the browser unless the session is modified.*/
 	store:store,
-	// cookie:{
-	// 	maxAge:50000,
-	// }
+
 }));
 
 
@@ -92,7 +90,7 @@ app.get('/Product_delete/:deleteid',Add_product.delete_product);
 app.get("/signUp",signup.SignUp_controller);
 app.get("/order",csrfprotection,order.order_controller);
 app.get("/Add_product",csrfprotection,add_product.add_product_controller);
-app.post("/Add_product",add_product.add_products_controller);
+app.post("/signin",add_product.signin_controller);
 app.get("/LOGOUT",csrfprotection,Add_product.Logout_controller);//change
 app.get("/mypassword",add_product.social_service);
 app.post('/socialservice_enter',add_product.social_service_signup);

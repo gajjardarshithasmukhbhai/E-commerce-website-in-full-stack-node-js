@@ -1,0 +1,6 @@
+{
+    "USER_AGENT": "api-team-692e8861471e4de2fd84f6d91d1175c0",
+    "VERIFY_CREDENTIALS": "http://myanimelist.net/api/account/verify_credentials.xml",
+    "SEARCH": "http://myanimelist.net/api/anime/search.xml?q=",
+    "ADD": "http://myanimelist.net/api/animelist/add/"
+}

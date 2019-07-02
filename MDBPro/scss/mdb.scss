@@ -1,0 +1,102 @@
+/*!
+ * Material Design for Bootstrap 4
+ * Version: MDB E-commerce Templates Pack 4.7.5
+ *
+ *
+ * Copyright: Material Design for Bootstrap
+ * https://mdbootstrap.com/
+ *
+ * Read the license: https://mdbootstrap.com/general/license/
+ *
+ *
+ * Documentation: https://mdbootstrap.com/
+ *
+ * Getting started: https://mdbootstrap.com/docs/jquery/getting-started/download/
+ *
+ * Tutorials: https://mdbootstrap.com/education/bootstrap/
+ *
+ * Templates: https://mdbootstrap.com/templates/
+ *
+ * Support: https://mdbootstrap.com/support/
+ *
+ * Contact: office@mdbootstrap.com
+ *
+ * Attribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js
+ *
+ */
+
+@charset "UTF-8";
+
+// Bootstrap
+@import "core/bootstrap/functions";
+@import "core/bootstrap/variables";
+
+// CORE
+@import "core/mixins";
+// Your custom variables
+@import "custom-variables";
+@import "core/colors";
+@import "core/variables";
+@import "core/global";
+@import "core/helpers";
+@import "core/typography";
+@import "core/masks";
+@import "core/waves";
+
+// FREE
+@import "free/animations-basic";
+@import "free/buttons";
+@import "free/cards";
+@import "free/dropdowns";
+@import "free/depreciated";
+@import "free/navbars";
+@import "free/pagination";
+@import "free/badges";
+@import "free/modals";
+@import "free/carousels";
+@import "free/forms";
+@import "free/input-group";
+@import "free/msc";
+@import "free/footers";
+@import "free/list-group";
+@import "free/tables";
+@import "free/steppers";
+@import "free/loader";
+
+// PRO
+@import "pro/variables";
+@import "pro/buttons";
+@import "pro/social-buttons";
+@import "pro/tabs";
+@import "pro/cards-basic";
+@import "pro/dropdowns";
+@import "pro/depreciated";
+@import "pro/navbars";
+@import "pro/scrollspy";
+@import "pro/lightbox";
+@import "pro/msc";
+@import "pro/forms";
+@import "pro/radio";
+@import "pro/checkbox";
+@import "pro/material-select";
+@import "pro/range";
+@import "pro/accordion-basic";
+@import "pro/sidenav";
+@import "pro/ecommerce";
+@import "pro/carousels";
+@import "pro/blog";
+@import "pro/animations";
+@import "pro/scrollbar";
+// Your custom skin
+@import "custom-skin";
+@import "pro/skins";
+
+// Sections
+@import "pro/sections/templates";
+@import "pro/sections/contacts";
+
+// E-commerce styles
+@import "e-commerce/general";
+
+// Your custom styles
+@import "custom-styles";

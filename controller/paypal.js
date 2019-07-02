@@ -30,7 +30,7 @@ exports.paypal_money_controller=(req,res,next)=>{
 	    "transactions": [{
 	        "item_list": {
 	            "items": [{
-	                "name": "swhat",
+	                "name": Title,
 	                "sku": "001",
 	                "price": price,
 	                "currency": "USD",

@@ -8,25 +8,25 @@ architecture with real time chating features like socket io :-)
 ```text
 start project 
 step:1
-	npm install
+  npm install
 step:2
-	localhost:5060
+  localhost:5060
 ```
 ## Packages
-| npm package 			    | command		     			  | application                          |
+| npm package           | command               | application                          |
 | --------------------------------- | ------------------------------------------- | ------------------------------------ |
-| anime     	    		    | npm install animejs                         | animation                            |
-| bcryptjs   	     		    | npm install bcryptjs                        | password encryption                  |
-| csurf     	     		    | npm install csurf                           | csrf token	                         |
-| express-session    		    | npm install express-session                 | session with cookie                  |
-| font-awesome       		    | npm install font-awesome                    | font styling                         |
+| anime                   | npm install animejs                         | animation                            |
+| bcryptjs                | npm install bcryptjs                        | password encryption                  |
+| csurf                   | npm install csurf                           | csrf token                           |
+| express-session           | npm install express-session                 | session with cookie                  |
+| font-awesome              | npm install font-awesome                    | font styling                         |
 | nodemailer-sendgrid-transport     | npm install nodemailer-sendgrid-transport   | mail sending third party service     |
-| toastr   			    | npm install toastr                          | notification beautiful               |
-| body-parser     		    | npm install body-parser                     | take data                            |
-| mongodb    			    | npm install mongodb                         | mongodb database driver              |
-| Mdbootstrap   	            | npm install mdbootstarp                     | this bootstrap use for modern look design|
-| socket io	  	            | npm i socket.io	                          | this socket basically use for real time chat web-app with user|
-| paypal	  	            | npm i paypal-sdk	                          | paypal integratation package|
+| toastr            | npm install toastr                          | notification beautiful               |
+| body-parser             | npm install body-parser                     | take data                            |
+| mongodb             | npm install mongodb                         | mongodb database driver              |
+| Mdbootstrap                 | npm install mdbootstarp                     | this bootstrap use for modern look design|
+| socket io                 | npm i socket.io                           | this socket basically use for real time chat web-app with user|
+| paypal                  | npm i paypal-sdk                            | paypal integratation package|
 
 **in this web-app i learn lot**
 ---
