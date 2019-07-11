@@ -145,7 +145,7 @@ app.get("/",home.home_controller);
 app.use((req,res,next)=>{
 	res.status(404).render("404",{error:"url is wrong"});
 })
-var port=4040;
+var port=process.env.PORT ||4040;
 var server;
 mongoConnect(() => {
     server=app.listen(port, (wer) => console.log("i am new"));
