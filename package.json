@@ -24,7 +24,7 @@
     "jquery": "^3.4.1",
     "material-kit": "^2.0.4",
     "mongodb": "^3.2.2",
-    "mongoose": "^5.4.19",
+    "mongoose": "^5.7.5",
     "mysql2": "^1.6.5",
     "nodemailer": "^6.1.0",
     "nodemailer-sendgrid-transport": "^0.2.0",
