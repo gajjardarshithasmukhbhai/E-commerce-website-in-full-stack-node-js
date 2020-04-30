@@ -21,7 +21,7 @@
     "font-awesome": "^4.7.0",
     "google-fonts": "^1.0.0",
     "googleapis": "^39.2.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "material-kit": "^2.0.4",
     "mongodb": "^3.2.2",
     "mongoose": "^5.4.19",
