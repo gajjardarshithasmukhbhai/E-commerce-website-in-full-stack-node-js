@@ -35,7 +35,7 @@
     "passport-instagram": "^1.0.0",
     "passport-linkedin-oauth2": "^1.6.1",
     "paypal-rest-sdk": "^1.8.1",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "socket.io": "^2.2.0",
     "toastr": "^2.1.4",
     "xoauth2": "^1.2.0"
